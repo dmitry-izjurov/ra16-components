@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-content {
+    width: 400px;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+}
+
+.purchase-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.price {
+    font-size: 30px;
+}
+
+button {
+    font-family: inherit;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 200px;
+    background-color: rgb(109, 109, 109);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+
+button:hover {
+    color: #000;
+    background-color: rgb(255, 224, 183);
+    margin-left: 5px;
+    transition-duration: 1s;
+}
+
+button:focus {
+    color: #000;
+    background-color: rgb(255, 183, 183);
+    margin-left: 5px;
+    border: 2px solid red;
+    transition: border 0s, background-color 1s, margin-left 1s;
+}
