@@ -1,4 +1,5 @@
 import './ShopItemFunc.css';
+import PropTypes from 'prop-types';
 
 function ShopItemFunc(props) {
   return (
@@ -16,6 +17,10 @@ function ShopItemFunc(props) {
     </div>
   );
 }
-  
+
+ShopItemFunc.propTypes = {
+  item: PropTypes.object
+};
+
 export default ShopItemFunc;
   
