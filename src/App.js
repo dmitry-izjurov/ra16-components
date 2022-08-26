@@ -1,4 +1,6 @@
+import './App.css';
 import ShopItemFunc from './ShopItemFunc';
+import ShopItemClass from './ShopItemClass';
 
 function App() {
   const item = {
@@ -16,7 +18,10 @@ function App() {
         <div className='highlight-overlay'></div>
       </div>
       <div className="window">
+        <span>Функциональный компонент:</span>
         <ShopItemFunc item={item} />
+        <span>class-based компонент:</span>
+        <ShopItemClass item={item}/>
       </div>
     </div>
   );
